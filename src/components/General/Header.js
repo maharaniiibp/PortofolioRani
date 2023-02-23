@@ -18,14 +18,14 @@ export default function Header() {
   }
 
   return (
-    <header className="border-b border-slate-500 mb-5">
-      <div className="container mx-auto flex justify-between p-5">
-        <div className="logo">
+    <header className="border-b border-slate-500 mb-5 bg-stone-500">
+      <div className="container mx-auto flex p-5 w-full text-white">
+        <div className="logo justify-start">
           <Link href="/">
-            <a>Mathilde.</a>
+            <a>RAIN</a>
           </Link>
         </div>
-        <ul className="gap-5 hidden lg:flex">
+        <ul className="gap-5 hidden lg:flex ml-nav justify-end space-x-4">
           {menu.map((value, index) => (
             <li key={index}>
               <Link href={value.href}>
@@ -34,12 +34,7 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        <div className="ml-auto mr-3 lg:ml-0 lg:mr-0">
-          <Link href="/contact">
-            <a className="border border-slate-500 p-1 px-5">Contact</a>
-          </Link>
-        </div>
-        <div className="block lg:hidden">
+        <div className="block lg:hidden justify-end ml-auto ">
           <button onClick={() => setIsShowMenuMobile(true)} ref={menuRef}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +56,6 @@ export default function Header() {
 
       {isShowMenuMobile && (
         <div className="fixed w-full top-0 left-0 h-full bg-white text-center text-2xl p-5 z-50">
-          <h2 className="my-5">MENU</h2>
           <ul>
             {menu.map((value, index) => (
               <li key={index} className="border-b py-3">

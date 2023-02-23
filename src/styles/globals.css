@@ -1,19 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 html {
-  @apply font-['Lato'] font-[sans-serif]
+  @apply font-['poppins'] font-[poppins]
 }
 
 body {
-  @apply bg-[#F2F5EB]
+  @apply bg-[#F4DFD0]
 }
 
 h1, h2, h3 {
-  @apply font-['Raleway'] font-[sans-serif]
+  @apply font-Poppins font-Poppins
 }
 
 .logo{
-  @apply font-['Raleway'] font-bold
+  @apply font-PermanentMarker font-bold
 }

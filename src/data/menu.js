@@ -8,11 +8,7 @@ export const menu = [
     href: '/about-me',
   },
   {
-    label: 'Work',
-    href: '/work',
-  },
-  {
-    label: 'Testimoni',
-    href: '/testimoni',
+    label: 'Contact',
+    href: '/contact',
   },
 ]

@@ -5,7 +5,16 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      margin: {
+        nav: "1200px",
+        ham: "400px",
+      },
+      fontFamily: {
+        Poppins: "Poppins",
+        PermanentMarker: "Permanent Marker",
+      }
+    },
   },
   plugins: [],
 }
